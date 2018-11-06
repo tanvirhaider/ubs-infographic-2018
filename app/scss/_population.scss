@@ -1,0 +1,161 @@
+
+
+   .population-style {
+        position: absolute;
+        top: 120px;
+        width: 47%;
+        box-sizing: border-box;
+        padding-left: 30px;
+
+
+        @include breakpoint (mobile) {
+          top: 15px;
+          left: 0px;
+          width: calc(100% - 30px);
+          padding-left:unset;
+          margin-left: 15px;
+        }
+   
+
+    .pBox1-style {
+      width: calc(76% - 245px);
+      min-width: 120px;
+      height: 45px;
+      position: absolute;
+      left: 245px;
+      top: 43px;
+      background-color: #dbd6db;
+
+      @include breakpoint (mobile)  {
+        height: 25px;
+        left: 130px;
+        top: 60px;
+      }
+
+
+      .pBox1copy-style {
+        font-family: 'Roboto Slab', serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: black;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        width: auto;
+
+        @include breakpoint (medium) {
+            font-size: 18px;
+            top: 10px;
+        }
+
+        @include breakpoint (mobile) {
+          font-size: 14px;
+          top: 3px;
+        }
+      }
+
+      .pBox1BG-style {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+      }
+
+    }
+
+    .pBox2-style {
+      width: calc(100% - 245px);
+      min-width: 120px;
+      height: 45px;
+      position: absolute;
+      left: 245px;
+      top: 138px;
+      background-color: #dbd6db;
+
+      @include breakpoint (mobile) {
+       // width: 30px;
+        height: 30px;
+      }
+
+
+      .pBox2copy-style {
+        font-family: 'Roboto Slab', serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: black;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        width: auto;
+
+        @include breakpoint (medium) {
+            font-size: 18px;
+            top: 10px;
+        }
+
+
+      }
+
+      .pBox2BG-style {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+      }
+
+    }
+
+    .population_H1-style {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+    }
+
+    .icon_population-style {
+      position: absolute;
+      top: 70px;
+      width: 90px;
+      height: 90px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @include breakpoint (mobile) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .icon_us-style {
+      position: absolute;
+      left: 150px;
+      top: 35px;
+      width: 65px;
+      height: 65px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @include breakpoint (mobile) {
+        width: 30px;
+        height: 30px;
+        left: 70px;
+        top: 60px;
+      }
+    }
+
+    .icon_eu-style {
+      position: absolute;
+      left: 150px;
+      top: 130px;
+      width: 65px;
+      height: 65px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @include breakpoint (mobile) {
+        width: 30px;
+        height: 30px;
+        left: 70px;
+        top: 100px;
+      }
+    }
+    
+  }

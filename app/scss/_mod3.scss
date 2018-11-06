@@ -1,0 +1,27 @@
+
+
+.mod3-style {
+  position: absolute;
+  width: calc(22% - 60px);
+  height: 100%;
+  // background-color: rgb(156, 156, 156);
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 0px;
+
+  .mod3copy1-style {
+    position: absolute;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .mod3graphics1-style {
+    width: 100%;
+    position: absolute;
+    height: 370px;
+    background-size: contain;
+    background-position: 0% 50%;
+    bottom: 55px;
+}
+
+}

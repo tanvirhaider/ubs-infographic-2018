@@ -1,0 +1,150 @@
+
+
+
+    .mod1-style {
+        position: absolute;
+        height: 350px;
+        width: calc(50% - 30px);
+        left: 0px;
+        margin-left: 30px;
+       // max-width: 720px;
+      //  background-color: darkgray;
+        bottom: 60px;
+  
+        .mod1lines-style {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          bottom: 0px;
+  
+  
+          .lineItems-style {
+            display: flex;
+            //padding-bottom: 13%;
+            padding-bottom: 90px;
+            position: relative;
+            bottom: -11px;
+  
+            &:nth-child(4) {
+              padding-bottom: unset;
+            }
+           // margin-top: 12%;
+  
+            .lineItemvalue-style {
+              font-size: 12px;
+              min-width: 25px;
+              text-align: right;
+              margin-right: 10px;
+              box-sizing: border-box;
+              font-family: 'Roboto Slab', serif;
+              position: relative;
+              bottom: 3px;
+            }
+  
+            .lineItembg-style {
+              height: 2px;
+              width: 100%;
+              background-color: white;
+              position: relative;
+              top: 5px;
+            }
+  
+          }
+  
+  
+         
+        }
+  
+        .mod2lines-style {
+          position: absolute;
+          width: calc(100% - 70px);
+          right: 15px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+  
+         
+  
+          .lineItems2-style {
+              position: relative;
+              width: 6%;
+              box-sizing: border-box;
+  
+            .linesContainer-style {
+              height: 100%;
+             // width: 36px;
+              width: 100%;
+              max-width: 36px;
+              display: flex;
+              position: relative;
+  
+    
+              .lineItemleft-style {
+                width: 50%;
+                
+                position: absolute;
+                height: 100%;
+                left: 0px;
+                bottom: 0px;
+              //  background-color: pink;
+  
+                .lineItemleftbg-style {
+                  background-color: #806b7e;
+                  position: absolute;
+                  width: 100%;
+                  height: 0%;
+                  bottom: 0px;
+                }
+                
+              }
+    
+              .lineItemright-style {
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                //width: 100%;
+                right: 0px;
+                bottom: 0px;
+  
+               // background-color: purple;
+                
+                .lineItemrightbg-style {
+                  background-color: #aea0ac;
+                  position: absolute;
+                  width: 100%;
+                  height: 0%;
+                  bottom: 0px;
+                }
+              }
+            }
+  
+            .yearsContainer-style {
+              font-family: 'Roboto Slab', serif;
+              font-size: 12px;
+              text-align: center;
+              margin-top: 2px;
+              box-sizing: border-box;
+              width: 35px;
+
+
+              @include breakpoint (large) {
+                font-size: 10px;
+                margin-top: 5px;
+              }
+
+              @include breakpoint (medium) {
+                font-size: 8px;
+                margin-top: 5px;
+              }
+  
+            
+             
+            }
+            
+  
+  
+          }
+        }
+  
+      }

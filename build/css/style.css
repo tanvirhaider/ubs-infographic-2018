@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700");
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+p {
+  padding-bottom: 15px; }
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.fullBleed {
+  width: 100%;
+  height: 100%; }
+
+.square {
+  width: 600px;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.background-commom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.dead-center-absolute {
+  right: -9999px;
+  left: -9999px;
+  top: -9999px;
+  bottom: -9999px;
+  margin: auto; }
+
+.resetposition {
+  right: unset;
+  left: unset;
+  top: unset;
+  bottom: unset;
+  margin: unset; }
+
+.no-select {
+  user-select: none;
+  pointer-events: none; }
+
+.highlight-fix {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+.drop-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+
+.box-shadow {
+  box-shadow: 10px 10px 5px #888888; }
+
+.shadow {
+  filter: drop-shadow(1px 1px 2px #000); }
+
+.centerit {
+  position: aboslute;
+  left: -9999px !important;
+  right: -9999px !important;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .centerit {
+      left: 20px !important;
+      right: unset !important;
+      margin-left: unset;
+      margin-right: unset; } }
+
+.italic {
+  font-family: 'Proxima N W01 Reg';
+  font-weight: normal;
+  font-style: italic; }
+
+/* ------------------------------------------------------------ */
+/* -----> RESET.CSS INCLUDED HERE TO REDUCE SERVER CALLS <----- */
+/* ------------------------------------------------------------ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
+  display: block; }
+
+a img {
+  border: 0; }
+
+/* ------------------------------------------------------------------- */
+/* -----> BODY STYLE TO PREVENT FONT SCALLING ON MOBILE DEVICES <----- */
+/* ------------------------------------------------------------------- */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  zoom: 100%; }
+
+.stage-style {
+  position: relative;
+  width: 100%;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  min-height: 560px;
+  background-color: #ccc4cb; }
+  .stage-style .mod-style {
+    position: absolute;
+    opacity: 0;
+    animation: fadein 1s forwards;
+    width: 100%;
+    max-width: 1475px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .stage-style .mod-style .title-style {
+      position: absolute;
+      top: 13px;
+      left: 0px;
+      margin-left: 30px; }
+      .stage-style .mod-style .title-style .title_H1-style {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 24px; }
+      .stage-style .mod-style .title-style .title_H2-style {
+        padding-top: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px; }
+        @media all and (min-width: 1025px) and (max-width: 1224px) {
+          .stage-style .mod-style .title-style .title_H2-style {
+            font-size: 16px; } }
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+          .stage-style .mod-style .title-style .title_H2-style {
+            font-size: 12px; } }
+      .stage-style .mod-style .title-style .title_H3-style {
+        padding-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 9px;
+        font-weight: 300; }
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+          .stage-style .mod-style .title-style .title_H3-style {
+            font-size: 8px; } }
+      @media (max-width: 767px) {
+        .stage-style .mod-style .title-style {
+          top: 15px;
+          left: 15px; } }
+    .stage-style .mod-style .mod1-style {
+      position: absolute;
+      height: 350px;
+      width: calc(50% - 30px);
+      left: 0px;
+      margin-left: 30px;
+      bottom: 60px; }
+      .stage-style .mod-style .mod1-style .mod1lines-style {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0px; }
+        .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style {
+          display: flex;
+          padding-bottom: 90px;
+          position: relative;
+          bottom: -11px; }
+          .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style:nth-child(4) {
+            padding-bottom: unset; }
+          .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style .lineItemvalue-style {
+            font-size: 12px;
+            min-width: 25px;
+            text-align: right;
+            margin-right: 10px;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+            position: relative;
+            bottom: 3px; }
+          .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style .lineItembg-style {
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            position: relative;
+            top: 5px; }
+      .stage-style .mod-style .mod1-style .mod2lines-style {
+        position: absolute;
+        width: calc(100% - 70px);
+        right: 15px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box; }
+        .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style {
+          position: relative;
+          width: 6%;
+          box-sizing: border-box; }
+          .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .linesContainer-style {
+            height: 100%;
+            width: 100%;
+            max-width: 36px;
+            display: flex;
+            position: relative; }
+            .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .linesContainer-style .lineItemleft-style {
+              width: 50%;
+              position: absolute;
+              height: 100%;
+              left: 0px;
+              bottom: 0px; }
+              .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .linesContainer-style .lineItemleft-style .lineItemleftbg-style {
+                background-color: #806b7e;
+                position: absolute;
+                width: 100%;
+                height: 0%;
+                bottom: 0px; }
+            .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .linesContainer-style .lineItemright-style {
+              position: absolute;
+              width: 50%;
+              height: 100%;
+              right: 0px;
+              bottom: 0px; }
+              .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .linesContainer-style .lineItemright-style .lineItemrightbg-style {
+                background-color: #aea0ac;
+                position: absolute;
+                width: 100%;
+                height: 0%;
+                bottom: 0px; }
+          .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
+            font-family: 'Roboto Slab', serif;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 2px;
+            box-sizing: border-box;
+            width: 35px; }
+            @media all and (min-width: 1025px) and (max-width: 1224px) {
+              .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
+                font-size: 10px;
+                margin-top: 5px; } }
+            @media all and (min-width: 768px) and (max-width: 1024px) {
+              .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
+                font-size: 8px;
+                margin-top: 5px; } }
+    .stage-style .mod-style .mod2-style {
+      margin-left: 20px;
+      position: absolute;
+      width: 28%;
+      height: 100%;
+      left: 50%; }
+      .stage-style .mod-style .mod2-style .mod2copy1-style {
+        position: absolute;
+        padding-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500; }
+        @media all and (min-width: 1025px) and (max-width: 1224px) {
+          .stage-style .mod-style .mod2-style .mod2copy1-style {
+            font-size: 16px; } }
+      .stage-style .mod-style .mod2-style .mod2graphics1-style {
+        width: 100%;
+        position: absolute;
+        height: 170px;
+        background-size: contain;
+        background-position: 0% 50%;
+        top: 100px; }
+      .stage-style .mod-style .mod2-style .mod2copy2-style {
+        position: absolute;
+        padding-top: 306px;
+        font-family: 'Roboto', sans-serif; }
+        @media all and (min-width: 1025px) and (max-width: 1224px) {
+          .stage-style .mod-style .mod2-style .mod2copy2-style {
+            font-size: 14px; } }
+      .stage-style .mod-style .mod2-style .mod2graphics2-style {
+        width: 100%;
+        position: absolute;
+        bottom: 58px; }
+        .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_bg-style {
+          display: flex;
+          justify-content: space-between;
+          background-color: #aea0ac;
+          height: 44px;
+          width: 33%;
+          overflow: hidden; }
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_bg-style {
+              height: 30px; } }
+        .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_bg-style {
+          display: flex;
+          justify-content: space-between;
+          background-color: #978695;
+          height: 44px;
+          width: 43%;
+          margin-top: 5px;
+          box-sizing: border-box;
+          overflow: hidden; }
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_bg-style {
+              height: 30px; } }
+        .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_bg-style {
+          display: flex;
+          justify-content: space-between;
+          background-color: #806b7e;
+          height: 44px;
+          width: 100%;
+          margin-top: 5px;
+          box-sizing: border-box;
+          overflow: hidden; }
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_bg-style {
+              height: 30px; } }
+        .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 44px;
+          padding-left: 10px;
+          box-sizing: border-box; }
+          @media all and (min-width: 1025px) and (max-width: 1224px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
+              font-size: 14px; } }
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
+              font-size: 11px;
+              line-height: 30px;
+              padding-left: 5px; } }
+        .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          line-height: 44px;
+          padding-right: 10px;
+          box-sizing: border-box; }
+          @media all and (min-width: 1025px) and (max-width: 1224px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
+              font-size: 14px; } }
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
+              font-size: 11px;
+              line-height: 30px;
+              padding-right: 5px; } }
+    .stage-style .mod-style .mod3-style {
+      position: absolute;
+      width: calc(22% - 60px);
+      height: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+      right: 0px; }
+      .stage-style .mod-style .mod3-style .mod3copy1-style {
+        position: absolute;
+        padding-top: 50px;
+        font-family: 'Roboto', sans-serif; }
+      .stage-style .mod-style .mod3-style .mod3graphics1-style {
+        width: 100%;
+        position: absolute;
+        height: 370px;
+        background-size: contain;
+        background-position: 0% 50%;
+        bottom: 55px; }
+  @media (max-width: 767px) {
+    .stage-style {
+      min-height: 600px; } }

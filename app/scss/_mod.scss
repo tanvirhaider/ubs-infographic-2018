@@ -1,0 +1,78 @@
+
+
+.mod-style {
+    position: absolute;
+    opacity: 0;
+    animation: fadein 1s forwards;  
+   // border: 1px dotted red;  
+    width: 100%; 
+    max-width: 1475px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+    .title-style {
+      
+      position: absolute;
+      top: 13px;
+      left: 0px;
+      margin-left: 30px;
+
+      .title_H1-style {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 24px;
+
+       
+      }
+
+      .title_H2-style {
+        padding-top: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+
+        @include breakpoint (large) {
+          font-size: 16px;
+        }
+
+        @include breakpoint (medium) {
+          font-size: 12px;
+        }
+      }
+
+      .title_H3-style {
+        padding-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 9px;
+        font-weight: 300;
+
+        @include breakpoint (medium) {
+          font-size: 8px;
+        }
+      }
+
+      @include breakpoint (mobile) {
+        top: 15px;
+        left: 15px;
+      }
+    }
+
+
+
+    @import 'mod1';
+    @import 'mod2';
+    @import 'mod3';
+
+
+   
+
+  
+    //@import 'onlinemarket';
+
+
+  }

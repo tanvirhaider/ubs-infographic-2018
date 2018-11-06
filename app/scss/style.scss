@@ -1,0 +1,32 @@
+
+
+
+@import 'common';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+$Font-Color: rgb(0, 0, 0);
+$Left-padding: 30px;
+
+
+.stage-style {
+  position: relative;
+  width: 100%;
+  min-width: 350px;
+//  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  min-height: 560px;
+  background-color: #ccc4cb;
+
+  @import 'mod';
+
+
+  @include breakpoint (mobile) {
+    min-height: 600px;
+  }
+
+ 
+}

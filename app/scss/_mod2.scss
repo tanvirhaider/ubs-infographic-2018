@@ -1,0 +1,132 @@
+
+
+ .mod2-style {
+     margin-left: 20px;
+    position: absolute;
+    width: 28%;
+    height: 100%;
+   // background-color: pink;
+    left: 50%;
+
+    .mod2copy1-style {
+        position: absolute;
+        padding-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+
+        @include breakpoint (large) {
+            font-size: 16px;
+        }
+    }
+
+    .mod2graphics1-style {
+        width: 100%;
+        position: absolute;
+        height: 170px;
+        background-size: contain;
+        background-position: 0% 50%;
+        top: 100px;
+    }
+
+    .mod2copy2-style {
+        position: absolute;
+        padding-top: 306px;
+        font-family: 'Roboto', sans-serif;
+
+        @include breakpoint (large) {
+            font-size: 14px;
+        }
+    }
+
+    .mod2graphics2-style {
+        width: 100%;
+        position: absolute;
+        bottom: 58px;
+
+        .m2b1_bg-style {
+            display: flex;
+            justify-content: space-between;
+            background-color: #aea0ac;
+            height: 44px;
+            width: 33%;
+            overflow: hidden;
+
+            @include breakpoint (medium) {
+                height: 30px;
+            }
+           
+        }
+
+        .m2b2_bg-style {
+            display: flex;
+            justify-content: space-between;
+            background-color: #978695;
+            height: 44px;
+            width: 43%;
+            margin-top: 5px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            @include breakpoint (medium) {
+                height: 30px;
+            }
+        }
+
+        .m2b3_bg-style {
+            display: flex;
+            justify-content: space-between;
+            background-color: #806b7e;
+            height: 44px;
+            width: 100%;
+            margin-top: 5px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            @include breakpoint (medium) {
+                height: 30px;
+            }
+        }
+       
+
+
+
+        .m2b1_country-style, .m2b2_country-style, .m2b3_country-style {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 44px;
+            padding-left: 10px;
+            box-sizing: border-box;
+
+            @include breakpoint (large) {
+                font-size: 14px;
+            }
+
+            @include breakpoint (medium) {
+                font-size: 11px;
+                line-height: 30px;
+                padding-left: 5px;
+            }
+        
+        }
+
+        .m2b1_value-style, .m2b2_value-style, .m2b3_value-style {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            line-height: 44px;
+            padding-right: 10px;
+            box-sizing: border-box;
+
+            @include breakpoint (large) {
+                font-size: 14px;
+            }
+
+            @include breakpoint (medium) {
+                font-size: 11px;
+                line-height: 30px;
+                padding-right: 5px;
+            }
+        }
+
+    }
+  }
