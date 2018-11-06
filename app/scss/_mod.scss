@@ -4,7 +4,6 @@
     position: absolute;
     opacity: 0;
     animation: fadein 1s forwards;  
-   // border: 1px dotted red;  
     width: 100%; 
     max-width: 1475px;
     left: 0px;
@@ -15,18 +14,28 @@
     box-sizing: border-box;
     overflow: hidden;
 
+   
+
 
     .title-style {
-      
       position: absolute;
       top: 13px;
       left: 0px;
       margin-left: 30px;
 
+      @include breakpoint (mobile) {
+       margin-left: 10px;
+      }
+
       .title_H1-style {
         font-family: 'Roboto Slab', serif;
         font-weight: bold;
         font-size: 24px;
+
+
+        @include breakpoint (mobile) {
+          font-size: 20px;
+        }
 
        
       }
@@ -43,6 +52,10 @@
         @include breakpoint (medium) {
           font-size: 12px;
         }
+
+        @include breakpoint (mobile) {
+          font-size: 12px;
+        }
       }
 
       .title_H3-style {
@@ -53,6 +66,10 @@
 
         @include breakpoint (medium) {
           font-size: 8px;
+        }
+
+        @include breakpoint (mobile) {
+          padding-top: 5px;
         }
       }
 

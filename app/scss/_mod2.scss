@@ -1,12 +1,19 @@
 
 
  .mod2-style {
-     margin-left: 20px;
+    margin-left: 20px;
     position: absolute;
     width: 28%;
     height: 100%;
-   // background-color: pink;
     left: 50%;
+
+
+    @include breakpoint (mobile) {
+        left: 0px;
+        top: 290px;
+        width: calc(100% - 20px);
+        height: 400px;
+    }
 
     .mod2copy1-style {
         position: absolute;
@@ -15,6 +22,10 @@
         font-weight: 500;
 
         @include breakpoint (large) {
+            font-size: 16px;
+        }
+
+        @include breakpoint (mobile) {
             font-size: 16px;
         }
     }
@@ -26,6 +37,11 @@
         background-size: contain;
         background-position: 0% 50%;
         top: 100px;
+
+        @include breakpoint (mobile) {
+            top: 80px;
+            background-position: 40% 50%;
+        }
     }
 
     .mod2copy2-style {
@@ -36,12 +52,23 @@
         @include breakpoint (large) {
             font-size: 14px;
         }
+
+        @include breakpoint (mobile) {
+            font-size: 14px;
+            padding-top: 260px;
+        }
     }
 
     .mod2graphics2-style {
         width: 100%;
         position: absolute;
         bottom: 58px;
+
+        @include breakpoint (mobile) {
+            bottom: unset;
+            top: 320px;
+            width: calc(100% - 20px);
+        }
 
         .m2b1_bg-style {
             display: flex;
@@ -52,6 +79,10 @@
             overflow: hidden;
 
             @include breakpoint (medium) {
+                height: 30px;
+            }
+
+            @include breakpoint (mobile) {
                 height: 30px;
             }
            
@@ -70,6 +101,10 @@
             @include breakpoint (medium) {
                 height: 30px;
             }
+
+            @include breakpoint (mobile) {
+                height: 30px;
+            }
         }
 
         .m2b3_bg-style {
@@ -83,6 +118,10 @@
             overflow: hidden;
 
             @include breakpoint (medium) {
+                height: 30px;
+            }
+
+            @include breakpoint (mobile) {
                 height: 30px;
             }
         }
@@ -107,6 +146,12 @@
                 line-height: 30px;
                 padding-left: 5px;
             }
+
+            @include breakpoint (mobile) {
+                font-size: 11px;
+                line-height: 30px;
+                padding-left: 5px;
+            }
         
         }
 
@@ -122,6 +167,12 @@
             }
 
             @include breakpoint (medium) {
+                font-size: 11px;
+                line-height: 30px;
+                padding-right: 5px;
+            }
+
+            @include breakpoint (mobile) {
                 font-size: 11px;
                 line-height: 30px;
                 padding-right: 5px;
