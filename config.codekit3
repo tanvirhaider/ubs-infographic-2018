@@ -118,16 +118,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/app/js/willow-js/slideshow.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/willow-js/slideshow-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/app/js/willow-js/sprite.js": {
 		"ft": 64,
 		"ma": 0,
@@ -144,26 +134,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/js/willow-js/stage-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/app/js/willow-js/utility.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/willow-js/utility-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/app/js/willow-js/video.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/willow-js/video-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
