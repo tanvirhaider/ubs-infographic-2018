@@ -103,20 +103,10 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "/build/js/app-min.js",
-		"oF": 0,
+		"oAP": "/build/js/infographic-source.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 1
-		},
-	"/app/js/mod1.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/mod1-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/app/js/TweenMax.min.js": {
 		"ft": 64,
@@ -309,14 +299,14 @@
 		"uL": 1
 		},
 	"/app/scss/style.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/build/css/style.css",
+		"oAP": "/build/css/infographic-style.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1

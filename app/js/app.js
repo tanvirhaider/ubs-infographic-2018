@@ -11,21 +11,20 @@ var yearLeftValue = [7,15,30,35,40,50,60,65,72,82,91,98];
 var yearRightValue = [26,36,49,56,62,67,73,77,82,87,93,100];
 
 
-
 // @codekit-prepend "TweenMax.min.js"
 // @codekit-prepend  "willow-js/stage.js"
 // @codekit-prepend  "willow-js/sprite.js"
 
 
-
-function initStage () {
+function initStage (cont) {
     stage = new Stage({
         id:"willow-stage",
-        class: "stage-style"
+        class: "stage-style",
+        container: cont
     });
 }
 
-function init () {
+function initInfoAnimation (d) {
 
     var mod = new Sprite({
         id:"mod",
@@ -43,24 +42,27 @@ function init () {
         id:'title_H1', 
         class: 'title_H1-style', 
         container:title.obj, 
-        text: {content: 'China’s Mobile Economy'}
+        text: {content: d.header}
        // text: {content: '中国的移动经济'}
     });
 
     //  
 
+
+
+
     var title_H2 = new Sprite({
         id:'title_H2', 
         class: 'title_H2-style', 
         container:title.obj, 
-        text: {content: 'Total Internet users vs. mobile Internet users in China, in millions'}
+        text: {content: d.subheader}
     });
 
     var title_H3 = new Sprite({
         id:'title_H3', 
         class: 'title_H3-style', 
         container:title.obj, 
-        text: {content: 'Source: https://cnnic.com.cn/IDR/ReportDownloads/201706/P020170608523740585924.pdf</br>*Forecast'}
+        text: {content: d.source}
     });
 
     // module 1 -----------------------
@@ -160,6 +162,7 @@ function init () {
     // end of Module 1 -------------
 
 
+
     // module 2 -----------------------------------
     var mod2 = new Sprite({
         id:'mod2', 
@@ -171,8 +174,10 @@ function init () {
         id:'mod2copy1', 
         class: 'mod2copy1-style', 
         container:mod2.obj, 
-        text: {content: 'Percentage of mobile Internet users making mobile payments'}
+        text: {content: d.header2}
     });
+
+    TweenMax.fromTo(mod2copy1.obj, 1, {alpha:0},{delay: 0.5, ease: Power1.easeInOut, alpha:1});
 
     var mod2graphics1 = new Sprite({
         id:'mod2graphics1', 
@@ -181,12 +186,16 @@ function init () {
         image: "assets/images/mod2graphix1@2x.png"
     });
 
+    TweenMax.fromTo(mod2graphics1.obj, 1, {alpha:0},{delay: 1, ease: Power1.easeInOut, alpha:1});
+
     var mod2copy2 = new Sprite({
         id:'mod2copy2', 
         class: 'mod2copy2-style', 
         container:mod2.obj, 
-        text: {content: 'Forecast of shoppers using their smartphones to pay at the point of sale by 2021'}
+        text: {content: d.subheader2}
     });
+
+    TweenMax.fromTo(mod2copy2.obj, 1, {alpha:0},{delay: 1.2, ease: Power1.easeInOut, alpha:1});
 
     var mod2graphics2 = new Sprite({
         id:'mod2graphics2', 
@@ -194,11 +203,14 @@ function init () {
         container:mod2.obj
     });
 
+    
+
     var m2b1 = new Sprite({
         id:'m2b1', 
         class: 'm2b1-style',
         container:mod2graphics2.obj
     });
+
 
    
 
@@ -212,7 +224,7 @@ function init () {
         id:'m2b1_country', 
         class: 'm2b1_country-style',
         container:m2b1_bg.obj,
-        text: {content: 'U.S.'}
+        text: {content: d.usa}
     });
 
     var m2b1_value = new Sprite({
@@ -240,7 +252,7 @@ function init () {
         id:'m2b2_country', 
         class: 'm2b2_country-style',
         container:m2b2_bg.obj,
-        text: {content: 'GERMANY'}
+        text: {content: d.germany}
     });
 
     var m2b2_value = new Sprite({
@@ -256,7 +268,6 @@ function init () {
         container:mod2graphics2.obj
     });
 
-   
 
     var m2b3_bg = new Sprite({
         id:'m2b3_bg', 
@@ -268,7 +279,7 @@ function init () {
         id:'m2b3_country', 
         class: 'm2b3_country-style',
         container:m2b3_bg.obj,
-        text: {content: 'CHINA'}
+        text: {content: d.china}
     });
 
     var m2b3_value = new Sprite({
@@ -303,8 +314,6 @@ function init () {
         document.getElementById("m2b3_value").innerText = game.score3 + "%";
     }, ease:Power1.easeInOut});
 
-
-
     var mod3 = new Sprite({
         id:'mod3', 
         class: 'mod3-style',
@@ -316,7 +325,7 @@ function init () {
         id:'mod3copy1', 
         class: 'mod3copy1-style', 
         container:mod3.obj, 
-        text: {content: 'Growth in total Chinese mobile payment transactions, in trillion RMB'}
+        text: {content: d.header3}
     });
 
     var mod3graphics1 = new Sprite({
@@ -326,22 +335,20 @@ function init () {
         image: "assets/images/mod3graphix1@2x.png"
     });
 
- 
+    TweenMax.fromTo(mod3copy1.obj, 1, {alpha:0},{delay: 1.5, ease: Power1.easeInOut, alpha:1});
+    TweenMax.fromTo(mod3graphics1.obj, 1, {alpha:0},{delay: 2, ease: Power1.easeInOut, alpha:1});
 
+    console.log('version 1');
 
-   
-
-    
 }
 
 
+function startInfographic (d) {
 
+    // 	container:"#infographic",
+   // data: infographicsData.english
+    
+    initStage (d.container);
+    initInfoAnimation(d.data);
+}
 
-
-
-
-window.onload = function() {
-    initStage ();
-    init();
-
-};

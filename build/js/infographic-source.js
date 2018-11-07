@@ -3898,11 +3898,25 @@ function initInfoAnimation(d) {
       content: d.header2
     }
   });
+  TweenMax.fromTo(mod2copy1.obj, 1, {
+    alpha: 0
+  }, {
+    delay: 0.5,
+    ease: Power1.easeInOut,
+    alpha: 1
+  });
   var mod2graphics1 = new Sprite({
     id: 'mod2graphics1',
     class: 'mod2graphics1-style',
     container: mod2.obj,
     image: "assets/images/mod2graphix1@2x.png"
+  });
+  TweenMax.fromTo(mod2graphics1.obj, 1, {
+    alpha: 0
+  }, {
+    delay: 1,
+    ease: Power1.easeInOut,
+    alpha: 1
   });
   var mod2copy2 = new Sprite({
     id: 'mod2copy2',
@@ -3911,6 +3925,13 @@ function initInfoAnimation(d) {
     text: {
       content: d.subheader2
     }
+  });
+  TweenMax.fromTo(mod2copy2.obj, 1, {
+    alpha: 0
+  }, {
+    delay: 1.2,
+    ease: Power1.easeInOut,
+    alpha: 1
   });
   var mod2graphics2 = new Sprite({
     id: 'mod2graphics2',
@@ -4065,6 +4086,21 @@ function initInfoAnimation(d) {
     container: mod3.obj,
     image: "assets/images/mod3graphix1@2x.png"
   });
+  TweenMax.fromTo(mod3copy1.obj, 1, {
+    alpha: 0
+  }, {
+    delay: 1.5,
+    ease: Power1.easeInOut,
+    alpha: 1
+  });
+  TweenMax.fromTo(mod3graphics1.obj, 1, {
+    alpha: 0
+  }, {
+    delay: 2,
+    ease: Power1.easeInOut,
+    alpha: 1
+  });
+  console.log('version 1');
 }
 
 function startInfographic(d) {
@@ -4074,4 +4110,4 @@ function startInfographic(d) {
   initInfoAnimation(d.data);
 }
 
-//# sourceMappingURL=app-min.js.map
+//# sourceMappingURL=infographic-source.js.map
