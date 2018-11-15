@@ -62,7 +62,7 @@ a {
   right: -9999px !important;
   margin-left: auto;
   margin-right: auto; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .centerit {
       left: 20px !important;
       right: unset !important;
@@ -127,14 +127,14 @@ body {
       top: 13px;
       left: 0px;
       margin-left: 30px; }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .stage-style .mod-style .title-style {
           margin-left: 10px; } }
       .stage-style .mod-style .title-style .title_H1-style {
         font-family: 'Roboto Slab', serif;
         font-weight: bold;
         font-size: 24px; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .title-style .title_H1-style {
             font-size: 20px; } }
       .stage-style .mod-style .title-style .title_H2-style {
@@ -144,10 +144,10 @@ body {
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .title-style .title_H2-style {
             font-size: 16px; } }
-        @media all and (min-width: 768px) and (max-width: 1024px) {
+        @media all and (min-width: 769px) and (max-width: 1024px) {
           .stage-style .mod-style .title-style .title_H2-style {
             font-size: 12px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .title-style .title_H2-style {
             font-size: 12px; } }
       .stage-style .mod-style .title-style .title_H3-style {
@@ -155,13 +155,13 @@ body {
         font-family: 'Roboto', sans-serif;
         font-size: 9px;
         font-weight: 300; }
-        @media all and (min-width: 768px) and (max-width: 1024px) {
+        @media all and (min-width: 769px) and (max-width: 1024px) {
           .stage-style .mod-style .title-style .title_H3-style {
             font-size: 8px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .title-style .title_H3-style {
             padding-top: 5px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .stage-style .mod-style .title-style {
           top: 15px;
           left: 15px; } }
@@ -172,7 +172,7 @@ body {
       left: 0px;
       margin-left: 30px;
       bottom: 60px; }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .stage-style .mod-style .mod1-style {
           width: calc(100% - 20px);
           margin-left: 10px;
@@ -192,7 +192,7 @@ body {
           bottom: -11px; }
           .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style:nth-child(4) {
             padding-bottom: unset; }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style {
               padding-bottom: 45px; } }
           .stage-style .mod-style .mod1-style .mod1lines-style .lineItems-style .lineItemvalue-style {
@@ -263,11 +263,11 @@ body {
               .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
                 font-size: 10px;
                 margin-top: 5px; } }
-            @media all and (min-width: 768px) and (max-width: 1024px) {
+            @media all and (min-width: 769px) and (max-width: 1024px) {
               .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
                 font-size: 8px;
                 margin-top: 5px; } }
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               .stage-style .mod-style .mod1-style .mod2lines-style .lineItems2-style .yearsContainer-style {
                 font-size: 8px;
                 margin-top: 5px; } }
@@ -277,7 +277,7 @@ body {
       width: 28%;
       height: 100%;
       left: 50%; }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .stage-style .mod-style .mod2-style {
           left: 0px;
           top: 290px;
@@ -292,7 +292,7 @@ body {
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .mod2-style .mod2copy1-style {
             font-size: 16px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod2-style .mod2copy1-style {
             font-size: 16px; } }
       .stage-style .mod-style .mod2-style .mod2graphics1-style {
@@ -303,7 +303,7 @@ body {
         background-position: 0% 50%;
         top: 100px;
         opacity: 0; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod2-style .mod2graphics1-style {
             top: 80px;
             background-position: 40% 50%; } }
@@ -315,7 +315,7 @@ body {
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .mod2-style .mod2copy2-style {
             font-size: 14px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod2-style .mod2copy2-style {
             font-size: 14px;
             padding-top: 260px; } }
@@ -323,7 +323,7 @@ body {
         width: 100%;
         position: absolute;
         bottom: 58px; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod2-style .mod2graphics2-style {
             bottom: unset;
             top: 320px;
@@ -335,10 +335,10 @@ body {
           height: 44px;
           width: 0%;
           overflow: hidden; }
-          @media all and (min-width: 768px) and (max-width: 1024px) {
+          @media all and (min-width: 769px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_bg-style {
               height: 30px; } }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_bg-style {
               height: 30px; } }
         .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_bg-style {
@@ -350,10 +350,10 @@ body {
           margin-top: 5px;
           box-sizing: border-box;
           overflow: hidden; }
-          @media all and (min-width: 768px) and (max-width: 1024px) {
+          @media all and (min-width: 769px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_bg-style {
               height: 30px; } }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_bg-style {
               height: 30px; } }
         .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_bg-style {
@@ -365,10 +365,10 @@ body {
           margin-top: 5px;
           box-sizing: border-box;
           overflow: hidden; }
-          @media all and (min-width: 768px) and (max-width: 1024px) {
+          @media all and (min-width: 769px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_bg-style {
               height: 30px; } }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_bg-style {
               height: 30px; } }
         .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
@@ -381,12 +381,12 @@ body {
           @media all and (min-width: 1025px) and (max-width: 1224px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
               font-size: 14px; } }
-          @media all and (min-width: 768px) and (max-width: 1024px) {
+          @media all and (min-width: 769px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
               font-size: 11px;
               line-height: 30px;
               padding-left: 5px; } }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_country-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_country-style {
               font-size: 11px;
               line-height: 30px;
@@ -400,12 +400,12 @@ body {
           @media all and (min-width: 1025px) and (max-width: 1224px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
               font-size: 14px; } }
-          @media all and (min-width: 768px) and (max-width: 1024px) {
+          @media all and (min-width: 769px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
               font-size: 11px;
               line-height: 30px;
               padding-right: 5px; } }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b2_value-style, .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b3_value-style {
               font-size: 11px;
               line-height: 30px;
@@ -417,7 +417,7 @@ body {
       margin-left: 20px;
       margin-right: 20px;
       right: 0px; }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .stage-style .mod-style .mod3-style {
           right: unset;
           left: 0px;
@@ -430,7 +430,7 @@ body {
         position: absolute;
         padding-top: 50px;
         font-family: 'Roboto', sans-serif; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod3-style .mod3copy1-style {
             font-size: 14px;
             padding-top: unset; } }
@@ -441,11 +441,11 @@ body {
         background-size: contain;
         background-position: 0% 50%;
         bottom: 55px; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           .stage-style .mod-style .mod3-style .mod3graphics1-style {
             bottom: unset;
             top: 40px;
             background-position: 50% 50%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .stage-style {
       min-height: 1200px; } }
