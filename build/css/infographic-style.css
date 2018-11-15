@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700");
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -46,10 +41,7 @@ a {
   margin: unset; }
 
 .no-select {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   pointer-events: none; }
 
 .highlight-fix {
@@ -62,8 +54,7 @@ a {
   box-shadow: 10px 10px 5px #888888; }
 
 .shadow {
-  -webkit-filter: drop-shadow(1px 1px 2px #000);
-          filter: drop-shadow(1px 1px 2px #000); }
+  filter: drop-shadow(1px 1px 2px #000); }
 
 .centerit {
   position: aboslute;
@@ -121,8 +112,7 @@ body {
   .stage-style .mod-style {
     position: absolute;
     opacity: 0;
-    -webkit-animation: fadein 1s forwards;
-            animation: fadein 1s forwards;
+    animation: fadein 1s forwards;
     width: 100%;
     max-width: 1475px;
     left: 0px;
@@ -297,7 +287,8 @@ body {
         position: absolute;
         padding-top: 50px;
         font-family: 'Roboto', sans-serif;
-        font-weight: 500; }
+        font-weight: 500;
+        opacity: 0; }
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .mod2-style .mod2copy1-style {
             font-size: 16px; } }
@@ -310,7 +301,8 @@ body {
         height: 170px;
         background-size: contain;
         background-position: 0% 50%;
-        top: 100px; }
+        top: 100px;
+        opacity: 0; }
         @media (max-width: 767px) {
           .stage-style .mod-style .mod2-style .mod2graphics1-style {
             top: 80px;
@@ -318,7 +310,8 @@ body {
       .stage-style .mod-style .mod2-style .mod2copy2-style {
         position: absolute;
         padding-top: 306px;
-        font-family: 'Roboto', sans-serif; }
+        font-family: 'Roboto', sans-serif;
+        opacity: 0; }
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .mod2-style .mod2copy2-style {
             font-size: 14px; } }
@@ -340,7 +333,7 @@ body {
           justify-content: space-between;
           background-color: #aea0ac;
           height: 44px;
-          width: 33%;
+          width: 0%;
           overflow: hidden; }
           @media all and (min-width: 768px) and (max-width: 1024px) {
             .stage-style .mod-style .mod2-style .mod2graphics2-style .m2b1_bg-style {
@@ -353,7 +346,7 @@ body {
           justify-content: space-between;
           background-color: #978695;
           height: 44px;
-          width: 43%;
+          width: 0%;
           margin-top: 5px;
           box-sizing: border-box;
           overflow: hidden; }
@@ -368,7 +361,7 @@ body {
           justify-content: space-between;
           background-color: #806b7e;
           height: 44px;
-          width: 100%;
+          width: 0%;
           margin-top: 5px;
           box-sizing: border-box;
           overflow: hidden; }

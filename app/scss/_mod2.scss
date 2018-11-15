@@ -20,6 +20,7 @@
         padding-top: 50px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
+        opacity: 0;
 
         @include breakpoint (large) {
             font-size: 16px;
@@ -37,6 +38,7 @@
         background-size: contain;
         background-position: 0% 50%;
         top: 100px;
+        opacity: 0;
 
         @include breakpoint (mobile) {
             top: 80px;
@@ -48,6 +50,7 @@
         position: absolute;
         padding-top: 306px;
         font-family: 'Roboto', sans-serif;
+        opacity: 0;
 
         @include breakpoint (large) {
             font-size: 14px;
@@ -75,7 +78,8 @@
             justify-content: space-between;
             background-color: #aea0ac;
             height: 44px;
-            width: 33%;
+          //  width: 33%;
+            width: 0%;
             overflow: hidden;
 
             @include breakpoint (medium) {
@@ -93,7 +97,8 @@
             justify-content: space-between;
             background-color: #978695;
             height: 44px;
-            width: 43%;
+            //width: 43%;
+            width: 0%;
             margin-top: 5px;
             box-sizing: border-box;
             overflow: hidden;
@@ -112,7 +117,8 @@
             justify-content: space-between;
             background-color: #806b7e;
             height: 44px;
-            width: 100%;
+            //width: 100%;
+            width: 0%;
             margin-top: 5px;
             box-sizing: border-box;
             overflow: hidden;
@@ -161,6 +167,7 @@
             line-height: 44px;
             padding-right: 10px;
             box-sizing: border-box;
+            //width: 0%;
 
             @include breakpoint (large) {
                 font-size: 14px;
