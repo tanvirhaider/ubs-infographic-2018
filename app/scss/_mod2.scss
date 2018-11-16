@@ -51,6 +51,7 @@
         padding-top: 306px;
         font-family: 'Roboto', sans-serif;
         opacity: 0;
+        pointer-events: none;
 
         @include breakpoint (large) {
             font-size: 14px;

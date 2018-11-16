@@ -108,7 +108,14 @@ body {
   margin-right: auto;
   height: 100%;
   min-height: 560px;
-  background-color: #ccc4cb; }
+  background-color: #dfdadf; }
+  .stage-style a {
+    color: #000;
+    text-decoration: none;
+    pointer-events: auto; }
+    .stage-style a sup {
+      font-size: 10px;
+      padding-left: 2px; }
   .stage-style .mod-style {
     position: absolute;
     opacity: 0;
@@ -151,9 +158,9 @@ body {
           .stage-style .mod-style .title-style .title_H2-style {
             font-size: 12px; } }
       .stage-style .mod-style .title-style .title_H3-style {
-        padding-top: 10px;
+        padding-top: 5px;
         font-family: 'Roboto', sans-serif;
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 300; }
         @media all and (min-width: 769px) and (max-width: 1024px) {
           .stage-style .mod-style .title-style .title_H3-style {
@@ -180,6 +187,44 @@ body {
           height: 200px;
           bottom: unset;
           top: 100px; } }
+      .stage-style .mod-style .mod1-style .mod1Legends-style {
+        position: absolute;
+        top: 48px;
+        left: 50px; }
+        @media (max-width: 768px) {
+          .stage-style .mod-style .mod1-style .mod1Legends-style {
+            top: 25px;
+            left: 35px; } }
+        .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style {
+          display: flex;
+          height: 35px;
+          margin-bottom: 7px; }
+          @media (max-width: 768px) {
+            .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style {
+              height: 20px;
+              margin-bottom: 4px; } }
+          .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style #mobileInternetUsersBox {
+            background-color: #aea0ac; }
+          .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style #TotalInternetUsersBox {
+            background-color: #806b7e; }
+          .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style .legendbox-style {
+            width: 35px;
+            height: 35px; }
+            @media (max-width: 768px) {
+              .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style .legendbox-style {
+                width: 20px;
+                height: 20px; } }
+          .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style .legendcopy-style {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            margin-left: 10px;
+            height: 35px;
+            line-height: 35px; }
+            @media (max-width: 768px) {
+              .stage-style .mod-style .mod1-style .mod1Legends-style .legenditem-style .legendcopy-style {
+                height: 20px;
+                line-height: 20px;
+                font-size: 9px; } }
       .stage-style .mod-style .mod1-style .mod1lines-style {
         position: absolute;
         width: 100%;
@@ -311,7 +356,8 @@ body {
         position: absolute;
         padding-top: 306px;
         font-family: 'Roboto', sans-serif;
-        opacity: 0; }
+        opacity: 0;
+        pointer-events: none; }
         @media all and (min-width: 1025px) and (max-width: 1224px) {
           .stage-style .mod-style .mod2-style .mod2copy2-style {
             font-size: 14px; } }

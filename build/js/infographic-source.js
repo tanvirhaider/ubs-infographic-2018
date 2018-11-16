@@ -3844,6 +3844,47 @@ function startMod1(data) {
       content: data.source
     }
   });
+  var mod1Legends = new Sprite({
+    id: 'mod1Legends',
+    class: 'mod1Legends-style',
+    container: mod1.obj
+  });
+  var mobileInternetUsers = new Sprite({
+    id: 'mobileInternetUsers',
+    class: 'legenditem-style',
+    container: mod1Legends.obj
+  });
+  var mobileInternetUsersBox = new Sprite({
+    id: 'mobileInternetUsersBox',
+    class: 'legendbox-style',
+    container: mobileInternetUsers.obj
+  });
+  var mobileInternetUsersCopy = new Sprite({
+    id: 'mobileInternetUsersCopy',
+    class: 'legendcopy-style',
+    container: mobileInternetUsers.obj,
+    text: {
+      content: "Mobile Internet Users"
+    }
+  });
+  var TotalInternetUsers = new Sprite({
+    id: 'TotalInternetUsers',
+    class: 'legenditem-style',
+    container: mod1Legends.obj
+  });
+  var TotalInternetUsersBox = new Sprite({
+    id: 'TotalInternetUsersBox',
+    class: 'legendbox-style',
+    container: TotalInternetUsers.obj
+  });
+  var TotalInternetUsersCopy = new Sprite({
+    id: 'TotalInternetUsersCopy',
+    class: 'legendcopy-style',
+    container: TotalInternetUsers.obj,
+    text: {
+      content: "Total Internet Users"
+    }
+  });
   var mod1lines = new Sprite({
     id: 'mod1lines',
     class: 'mod1lines-style',

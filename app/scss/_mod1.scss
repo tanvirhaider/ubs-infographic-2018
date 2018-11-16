@@ -17,6 +17,64 @@
           bottom: unset;
           top: 100px;
         }
+
+        .mod1Legends-style {
+          position: absolute;
+          top: 48px;
+          left: 50px;
+
+          @include breakpoint (mobile) {
+            top: 25px;
+            left: 35px;
+          }
+
+          .legenditem-style {
+            display: flex;
+            height: 35px;
+            margin-bottom: 7px;
+
+            @include breakpoint (mobile) {
+              height: 20px;
+              margin-bottom: 4px;
+            }
+
+
+            #mobileInternetUsersBox {
+              background-color: #aea0ac;
+            }
+
+            #TotalInternetUsersBox {
+              background-color: #806b7e;
+            }
+
+            
+            
+
+            .legendbox-style {
+              width: 35px;
+              height: 35px;
+              
+              @include breakpoint (mobile) {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            .legendcopy-style {
+              font-family: 'Roboto', sans-serif;
+              font-size: 12px;
+              margin-left: 10px;
+              height: 35px;
+              line-height: 35px;
+
+              @include breakpoint (mobile) {
+                height: 20px;
+                line-height: 20px;
+                font-size: 9px;
+              }
+            }
+          }
+        }
   
         .mod1lines-style {
           position: absolute;

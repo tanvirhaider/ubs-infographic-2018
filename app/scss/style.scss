@@ -19,7 +19,18 @@ $Left-padding: 30px;
   margin-right: auto;
   height: 100%;
   min-height: 560px;
-  background-color: #ccc4cb;
+  background-color: #dfdadf;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    pointer-events: auto;
+
+    sup {
+      font-size: 10px;
+      padding-left: 2px;
+    }
+  }
 
   @import 'mod';
 
